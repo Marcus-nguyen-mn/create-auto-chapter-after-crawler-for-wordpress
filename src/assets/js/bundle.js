@@ -6,8 +6,10 @@ function handleCreateChapterCrawler(){
     let mcIDStoryParents = document.querySelector("#mcIDStoryParents");
     let mcCurrentChapStory = document.querySelector("#mcCurrentChapStory");
     let mcContentChapter = document.querySelector("#mcContentChapter");
+    let loadingTxt = document.querySelector("#loadingTxt");
     if(btnCreateChapterCrawler){
         btnCreateChapterCrawler.onclick = ()=>{
+            loadingTxt.style.display = "block";
             let valnameChapter = mcNameChapter.value;
             let valnameStoryParent = mcNameStoryParent.value;
             let valIDStoryParent = mcIDStoryParents.value;
@@ -30,13 +32,14 @@ function handleCreateChapterCrawler(){
                 beforeSend: function () {
                 },
                 success: function (response) {
+                    loadingTxt.style.display = "none";
                     let results = JSON.parse(response);
-                    console.log(results);
-                    // if(results.data.status == true){
-                        
-                    // }else{
-                        
-                    // }
+                    if(results.data.status == true){
+                        alert("Tạo chapter thành công !");  
+                        location.reload();  
+                    }else{
+                        alert("Tạo không thành công, vui lòng thử lại sau ít phút !");  
+                    }
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
                     console.log(textStatus, errorThrown);

@@ -39,7 +39,7 @@ function mc_admin_page_create_chap_crawler() {
                 <label for="mcContentChapter">Content Chapter</label>
                 <textarea id="mcContentChapter"></textarea>
             </div>
-            <div class="txt-wating" id="loading-txt">
+            <div class="txt-wating" id="loadingTxt">
                 Vui lòng chờ đợi ......
             </div>
             <div class="btn-create-chap-crawler">
