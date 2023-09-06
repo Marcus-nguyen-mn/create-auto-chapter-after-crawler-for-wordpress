@@ -1,0 +1,45 @@
+.mc_create_chap_crawler_title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.mc_create_chap_crawler{
+    padding: 30px;
+}
+.mc_create_chap_crawler .one-inpt-crechap{
+    margin-bottom: 20px;
+}
+.mc_create_chap_crawler .one-inpt-crechap label{
+    display: block;
+    margin-bottom: 5px;
+}
+.mc_create_chap_crawler .one-inpt-crechap input{
+    width: 300px;
+}
+.mc_create_chap_crawler .one-inpt-crechap textarea{
+    width: 600px;
+    height: 300px;
+}
+.btn-create-chap-crawler button{
+    width:100px;
+    padding:6px;
+    border-radius:5px;
+    border:1px solid gray;
+    cursor:pointer;
+    outline:0;
+    font-weight:700;
+    background:#3c6fb1;
+    color:#fff;
+    transition:.3s all
+}
+.btn-create-chap-crawler button:hover{
+    transition:.3s all;
+    background:#fff;
+    border:1px solid #3c6fb1;
+    color:#3c6fb1
+}
+.txt-wating{
+    color: blue;
+    margin-bottom: 20px;
+}
